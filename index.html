@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        #loading, #results {
+            display: none;
+        }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">Unit Converter (Mass)</h1>
+                    <form id="unit-form-mass">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="value">
+                                <div class="input-group-append">
+                                    <select class="form-control input-group-text" id="unit">
+                                            <option>Kilogram</option>
+                                            <option>Gram</option>
+                                            <option>Pound</option>
+                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Convert" class="btn btn-dark btn-block">
+                        </div>
+                    </form>
+                    <!-- Loader -->
+                    <div id="loading">
+                        <img src="img/loading.gif" alt="">
+                    </div>
+                    <!-- Results -->
+                    <div id="results" class="pt-4">
+                    <h5>Results</h5>
+                        <div class="form-group">
+                            <div class="input-group">
+                                    <input type="number" class="form-control" id="kilogramResult" disabled>
+                                    <div class="input-group-append">
+                                            <span class="input-group-text">Kilogram</span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <div class="input-group">
+                                        <input type="number" class="form-control" id="gramResult" disabled>
+                                        <div class="input-group-append">
+                                                <span class="input-group-text">Gram</span>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                                <div class="input-group">
+                                        <input type="number" class="form-control" id="poundResult" disabled>
+                                        <div class="input-group-append">
+                                                <span class="input-group-text">Pound</span>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
